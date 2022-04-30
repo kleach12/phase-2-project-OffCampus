@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+h1 {
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 70px;
+  margin-top: 10px;
+}
+
