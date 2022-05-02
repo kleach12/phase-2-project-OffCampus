@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from "react";
 import { AiOutlineMenu } from "react-icons/ai"
+import { NavLink} from "react-router-dom";
 import "./CurtainMenu.css"
 
 function CurtainMenu(){
@@ -30,7 +31,7 @@ function CurtainMenu(){
     <div>
       {checkWidth < 2500 && (
       <button onClick={handleToggleNav} className="floating-btn">
-        <AiOutlineMenu/>
+        <AiOutlineMenu style={{color: 'white'}}/>
       </button>
       )}
 
@@ -43,9 +44,9 @@ function CurtainMenu(){
         </button>
       )}
 
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
+        <NavLink to="/" exact className="tags"> Home </NavLink>
+        <NavLink to="/" exact className="tags"> Home </NavLink>
+        <NavLink to="/" exact className="tags"> Home </NavLink>
 
       </nav>
     </div>

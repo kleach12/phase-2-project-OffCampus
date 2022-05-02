@@ -2,42 +2,43 @@
   position: absolute;
   top: 15px;
   left: 35px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: #f1f1f1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50% ;
+  opacity: .9;
+  background: #3c6e71;
+  border-color: #fff;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;    
 }
-.floating-btn img {
-  width: 35px; 
-  height: 35px;
-}
 
 nav {
+  height: 100%;
+  width: 100%;
   position: fixed;
-  left: 0;
   top: 0;
-  background: #f1f1f1;
-  height: 100vh;
-  transition: transform 0.4s ease-in-out;
+  left: 0;
+  background-color: #284b63;
+  opacity: .9;
+  transition: transform 0.7s ease-in-out;
 }
 
 nav.active {
   transform: translateX(0%)
 }
 
-nav a {
+.tags {
+  color: #fff;
   display: block;
-  padding: 10px 25px;
-  font-size: 25px;
+  padding: 70px 25px;
+  font-size: 50px;
+  text-decoration: none;
 }
-nav a:first-of-type{
-  padding-top: 35px;
+nav a :first-of-type{
+  margin-top: 100px;
 }
-
 .close-curtain {
   position: absolute;
   top: 10px;
@@ -46,10 +47,11 @@ nav a:first-of-type{
   height: 30px;
   cursor: pointer;
   color: #fff;
-  background: crimson;
+  background: #3c6e71;
+  border-radius: 50%;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 2500px){
   nav {
       transform: translateX(-100%);
   }
