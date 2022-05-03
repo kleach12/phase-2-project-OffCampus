@@ -9,6 +9,8 @@ body {
 background-color: #284B63;
 background-image: url('../src/Photos/luke-van-zyl-koH7IVuwRLw-unsplash.jpg');
 background-size: 2000px 1000px;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
 code {

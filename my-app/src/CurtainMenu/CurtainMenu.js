@@ -45,8 +45,7 @@ function CurtainMenu(){
       )}
 
         <NavLink to="/" exact className="tags"> Home </NavLink>
-        <NavLink to="/" exact className="tags"> Home </NavLink>
-        <NavLink to="/" exact className="tags"> Home </NavLink>
+        <NavLink to="/Complexlist" exact className="tags"> Complex List </NavLink>
 
       </nav>
     </div>

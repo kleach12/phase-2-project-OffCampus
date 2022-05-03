@@ -1,17 +1,25 @@
 import React, {useState, useEffect} from 'react';
+import CurtainMenu from './CurtainMenu/CurtainMenu';
 import Header from './Header/Header'
 import MainComponent from './MainComponent/MainComponent'
-import { Route } from "react-router-dom";
+import ComplexList from './ComplexList/ComplexList';
+import { Route, Switch } from "react-router-dom";
 import './App.css';
 
 function App() {
 
   return (
     <div className="App">
+      <CurtainMenu/>
       <Header/>
-      <Route path = "/">
-        <MainComponent/>
-      </Route>
+      <Switch>
+        <Route path= "/Complexlist">
+          <ComplexList/>
+        </Route>
+        <Route path = "/">
+          <MainComponent/>
+        </Route>
+      </Switch>
     </div>
   );
 }
