@@ -4,12 +4,11 @@ import { NavLink} from "react-router-dom";
 import "./CurtainMenu.css"
 
 function CurtainMenu(){
-  console.log(window.innerWidth)
   const [toggleNav, setToggleNav] = useState(false)
   const [checkWidth, setCheckWidth] = useState(window.innerWidth)
 
   const checkFunc = () => {
-    console.log(checkWidth)
+    // console.log(checkWidth)
     setCheckWidth(window.innerWidth)
   }
 

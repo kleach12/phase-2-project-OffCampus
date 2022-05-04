@@ -7,6 +7,16 @@ import { Route, Switch } from "react-router-dom";
 import './App.css';
 
 function App() {
+  const [listArr, setListArr] = useState([])
+
+  useEffect(() => {
+    fetch("http://localhost:3000/Complex")
+    .then((res) => res.json())
+    .then((data) =>{ 
+      // console.log(data)
+      setListArr(data)
+    })
+  },[])
 
   return (
     <div className="App">
@@ -14,7 +24,9 @@ function App() {
       <Header/>
       <Switch>
         <Route path= "/Complexlist">
-          <ComplexList/>
+          <ComplexList
+          listArrary = {listArr}
+          />
         </Route>
         <Route path = "/">
           <MainComponent/>

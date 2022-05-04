@@ -1,19 +1,18 @@
 {
-  "posts": [
+  "Complex": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Complex 1",
+      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+      "price": 8000,
+      "School":"UCSD"
+    },
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Complex 2",
+      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+      "price": 8000,
+      "School":"UCSD"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

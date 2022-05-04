@@ -1,28 +1,15 @@
 import React from "react";
 import "./ComplexList.css"
+import List from "./List/List";
 
-function ComplexList(){
+function ComplexList({listArrary}){
+
+  const singleComplex = listArrary.map((complex) => console.log(complex))
+  console.log(singleComplex)
+  
   return(
     <div class = "list">
-      <h2>Hi</h2>
-      <h2>Hi</h2>
-      <h2>Hi</h2>
-
-      <h2>Hi</h2>
-      <h2>Hi</h2>
-      v
-      <h2>Hi</h2>
-      <h2>Hi</h2>
-      v
-
-      <h2>Hi</h2>
-      v
-      <h2>Hi</h2>
-      v
-      v<h2>Hi</h2>
-      v
-      <h2>Hi</h2>
-      
+      {singleComplex}
     </div>
   )
 }
