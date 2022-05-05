@@ -3,6 +3,7 @@ import CurtainMenu from './CurtainMenu/CurtainMenu';
 import Header from './Header/Header'
 import MainComponent from './MainComponent/MainComponent'
 import ComplexList from './ComplexList/ComplexList';
+import ComplexForm from './ComplexForm/ComplexForm';
 import { Route, Switch } from "react-router-dom";
 import './App.css';
 
@@ -27,6 +28,9 @@ function App() {
           <ComplexList
           listArrary = {listArr}
           />
+        </Route>
+        <Route path= "/Complexform">
+          <ComplexForm/>
         </Route>
         <Route path = "/">
           <MainComponent/>

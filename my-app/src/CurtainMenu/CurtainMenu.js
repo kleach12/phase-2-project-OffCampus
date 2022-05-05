@@ -45,6 +45,7 @@ function CurtainMenu(){
 
         <NavLink to="/" exact className="tags"> Home </NavLink>
         <NavLink to="/Complexlist" exact className="tags"> Complexes</NavLink>
+        <NavLink to="/Complexform" exact className="tags"> New Complex</NavLink>
 
       </nav>
     </div>

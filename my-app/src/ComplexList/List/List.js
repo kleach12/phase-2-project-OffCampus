@@ -9,7 +9,7 @@ function List ({name,price,image}){
       <div class = "data">
         <div class = "content">
           <h3> {name} </h3>
-          <div class = "text">
+          <div id= "text">
             <h4>School</h4>
             <h4>Amenities</h4>
             <h4> Price ${price}</h4>
