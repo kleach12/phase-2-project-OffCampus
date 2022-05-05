@@ -2,9 +2,18 @@ import React from "react";
 import "./ComplexList.css"
 import List from "./List/List";
 
-function ComplexList({listArrary}){
 
-  const singleComplex = listArrary.map((complex) => console.log(complex))
+function ComplexList({listArrary}){
+  // console.log(listArrary)
+
+  const singleComplex = listArrary.map((complex) => (
+    <List 
+    key = {complex.id}
+    name = {complex.name} 
+    image = {complex.image} 
+    price = {complex.price}
+    />
+  ))
   console.log(singleComplex)
   
   return(

@@ -1,12 +1,12 @@
 .floating-btn {
   position: fixed;
-  top: 15px;
+  top: 10px;
   left: 35px;
   width: 50px;
   height: 50px;
   border-radius: 50% ;
   opacity: .9;
-  background: #3c6e71;
+  background: #d9d9d9;
   border-color: #fff;
   cursor: pointer;
   display: flex;
@@ -20,7 +20,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #284b63;
+  background-color: #3c6e71;
   opacity: .9;
   transition: transform 0.7s ease-in-out;
 }
@@ -30,10 +30,10 @@ nav.active {
 }
 
 .tags {
-  color: #fff;
+  color: #d9d9d9;
   display: block;
   padding: 70px 25px;
-  font-size: 50px;
+  font-size: 30px;
   text-decoration: none;
 }
 nav a :first-of-type{
@@ -46,8 +46,8 @@ nav a :first-of-type{
   width: 30px;
   height: 30px;
   cursor: pointer;
-  color: #fff;
-  background: #3c6e71;
+  color: #3c6e71;
+  background: #d9d9d9;
   border-radius: 50%;
 }
 

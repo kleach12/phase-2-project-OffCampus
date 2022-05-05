@@ -20,8 +20,8 @@ function App() {
 
   return (
     <div className="App">
-      <CurtainMenu/>
       <Header/>
+      <CurtainMenu/>
       <Switch>
         <Route path= "/Complexlist">
           <ComplexList

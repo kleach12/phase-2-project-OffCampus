@@ -3,7 +3,11 @@
 }
 
 h1 {
-  font-size: 90px;
+  color: #d9d9d9;
+  opacity: 1.0;
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 h2 {

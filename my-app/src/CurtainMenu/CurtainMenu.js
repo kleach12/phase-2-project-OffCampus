@@ -30,7 +30,7 @@ function CurtainMenu(){
     <div>
       {checkWidth < 2500 && (
       <button onClick={handleToggleNav} className="floating-btn">
-        <AiOutlineMenu style={{color: 'white'}}/>
+        <AiOutlineMenu style={{color: '#3c6e71'}}/>
       </button>
       )}
 
@@ -44,7 +44,7 @@ function CurtainMenu(){
       )}
 
         <NavLink to="/" exact className="tags"> Home </NavLink>
-        <NavLink to="/Complexlist" exact className="tags"> Complex List </NavLink>
+        <NavLink to="/Complexlist" exact className="tags"> Complexes</NavLink>
 
       </nav>
     </div>

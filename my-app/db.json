@@ -2,16 +2,74 @@
   "Complex": [
     {
       "id": 1,
-      "name": "Complex 1",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+      "name": "La Jolla International Gardens",
+      "image":"images/brandon-griggs-wR11KBaB86U-unsplash.jpg" ,
       "price": 8000,
+      "Distance": 3,
       "School":"UCSD"
     },
     {
-      "id": 1,
-      "name": "Complex 2",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+      "id": 2,
+      "name": "La Scala Apartments",
+      "image": "images/chuttersnap-3_1f0ZGOjIY-unsplash (1).jpg",
       "price": 8000,
+      "Distance": 3,
+      "School":"UCSD"
+    },
+    {
+      "id": 3,
+      "name": "La Jolla Nobel",
+      "image": "images/grant-lemons-jTCLppdwSEc-unsplash.jpg",
+      "price": 8000,
+      "Distance": 3,
+      "School":"UCSD"
+    },
+    {
+      "id": 4,
+      "name": "The Society",
+      "image": "images/hebert-marchesi-kKh9J8-UND4-unsplash.jpg",
+      "price": 8000,
+      "Distance": 3,
+      "School":"UCSD"
+    },
+    {
+      "id": 5,
+      "name": "Metro Mission Valley",
+      "image": "images/kelvin-zyteng-LMq-rTluKfQ-unsplash.jpg",
+      "price": 8000,
+      "Distance": 3,
+      "School":"UCSD"
+    },
+    {
+      "id": 6,
+      "name": "Complex 2",
+      "image": "images/malcolm-shadrach-_r80LCluvVM-unsplash.jpg",
+      "price": 8000,
+      "Distance": 3,
+      "School":"UCSD"
+    },
+    {
+      "id": 7,
+      "name": "Pacific Ridge",
+      "image": "images/marla-prusik-5q1KnUjtjaM-unsplash.jpg",
+      "price": 8000,
+      "Distance": 3,
+      "School":"UCSD"
+    },
+    {
+      "id": 8,
+      "name": "Complex 2",
+      "image": "images/seyi-ariyo-XCCAVA3BjhM-unsplash.jpg",
+      "price": 8000,
+      "Distance": 3,
+      "School":"UCSD"
+    },
+    {
+      "id": 9,
+      "name": "Complex 2",
+      "image": "images/sigmund-CwTfKH5edSk-unsplash.jpg",
+      "price": 8000,
+      "Distance": 3,
       "School":"UCSD"
     }
   ]
