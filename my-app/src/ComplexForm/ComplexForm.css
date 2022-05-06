@@ -1,0 +1,16 @@
+form {
+}
+.formdiv {
+  background-color: white;
+  margin-top: 100px;
+  margin-left:200px ;
+  margin-right: 200px;
+}
+.formbox{
+  padding: 10px 10px;
+  margin:10px 10px;
+  border: 0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;
+  width: 20%;
+}
