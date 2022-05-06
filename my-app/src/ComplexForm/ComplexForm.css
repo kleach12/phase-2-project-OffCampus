@@ -1,16 +1,88 @@
 form {
+  color: #d9d9d9;
 }
 .formdiv {
-  background-color: white;
+  background-color: rgba(40, 75, 99, .8);
   margin-top: 100px;
-  margin-left:200px ;
-  margin-right: 200px;
+  margin-left:300px ;
+  margin-right: 300px;
+  border-radius:10px;
 }
 .formbox{
-  padding: 10px 10px;
-  margin:10px 10px;
+  font-size: 20px;
+  display: block;
+  padding: 12px 10px;
+  margin: 13px 10px;
   border: 0;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   border-radius:10px;
-  width: 20%;
+  width: 90%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.form-question{
+  color: #353535;
+  background-color: white;
+  font-size: 20px;
+  display: block;
+  padding: 11px 10px;
+  margin:12px 10px;
+  border: 0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.submit{
+  text-align: center;
+  border-radius:10px;
+  padding: 10px 10px;
+  color: ;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-child1{
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.container-child2{
+  text-align: center;
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+
+input.formradio{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.radiobox{
+  padding: 11px 10px;
+  margin:12px 10px;
+}
+
+label {
+  font-size: 20px;
 }
