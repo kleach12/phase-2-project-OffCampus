@@ -12,6 +12,7 @@ function ComplexList({listArrary}){
     name = {complex.name} 
     image = {complex.image} 
     price = {complex.price}
+    school = {complex.school}
     />
   ))
   console.log(singleComplex)
