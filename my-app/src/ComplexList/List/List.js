@@ -10,10 +10,21 @@ function List ({name,price,image}){
         <div class = "content">
           <h3> {name} </h3>
           <div id= "text">
-            <h4>School</h4>
-            <h4>Amenities</h4>
-            <h4> Price ${price}</h4>
-            <p>Pet Frinedly</p>
+            <table>
+              <tr>
+                <th>School: </th>
+              </tr>
+              <tr>
+                <th>Price: ${price}</th>
+              </tr>
+              <tr>
+                <th> Bed: </th>
+                <th> Bath: </th>
+              </tr>
+              <tr>
+                <th>Pet Friendly: </th>
+              </tr>
+            </table>
           </div>
         </div>
       </div>

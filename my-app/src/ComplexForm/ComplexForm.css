@@ -3,13 +3,14 @@ form {
 }
 .formdiv {
   background-color: rgba(40, 75, 99, .8);
-  margin-top: 100px;
-  margin-left:300px ;
-  margin-right: 300px;
+  margin: 100px 300px;
   border-radius:10px;
 }
 .formbox{
+  background-color:#d9d9d9;
+  color: #3c6e71;
   font-size: 20px;
+  font-weight: 400;
   display: block;
   padding: 12px 10px;
   margin: 13px 10px;
@@ -22,24 +23,29 @@ form {
 }
 
 .form-question{
-  color: #353535;
-  background-color: white;
-  font-size: 20px;
+  color: #d9d9d9;
+  font-weight: 500;
+  font-size: 25px;
   display: block;
   padding: 11px 10px;
   margin:12px 10px;
   border: 0;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   border-radius:10px;
   width: 90%;
   box-sizing: border-box;
 }
 
 .submit{
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  background-color: #3c6e71;
+  color: #d9d9d9;
   text-align: center;
   border-radius:10px;
   padding: 10px 10px;
-  color: ;
+  margin-bottom: 20px;
+  border: 0;
 }
 
 .container{
@@ -85,4 +91,7 @@ input.formradio{
 
 label {
   font-size: 20px;
+  color: #d9d9d9;
+  font-weight: 500;
+  padding: 11px 10px;
 }
