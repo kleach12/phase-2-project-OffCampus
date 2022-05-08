@@ -10,7 +10,7 @@ import './App.css';
 function App() {
   const [listArr, setListArr] = useState([])
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false);
 
   console.log(isActive)
 

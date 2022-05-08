@@ -8,7 +8,16 @@ function MainComponent({activateList, setIsActive}){
   function handleSchool(e) {
     const selectedSchool = e.target.value
     setIsSchool(selectedSchool)
-    setIsActive((activateList) => !activateList)
+  }
+
+  if (isSchool === "University of California San Diego"){
+    setIsActive(true)
+  } else if (isSchool === "San Diego State University"){
+    setIsActive(true)
+  } else if (isSchool === "University of San Diego"){
+    setIsActive(true)
+  } else {
+    setIsActive(false)
   }
 
   return(
