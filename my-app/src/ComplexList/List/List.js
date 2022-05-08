@@ -11,11 +11,10 @@ function List ({
   distance,
   friendly
 }){
-  console.log(school)
   return(
     <div class = "card">
       <div class = "Shawdow"></div>
-      <img src={image} />
+      <img src={image} alt = {name} />
       <div class = "data">
         <div class = "content">
           <h3> {name} </h3>

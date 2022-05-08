@@ -3,12 +3,12 @@
     {
       "id": 1,
       "name": "La Jolla International Gardens",
-      "image":"images/brandon-griggs-wR11KBaB86U-unsplash.jpg" ,
+      "image": "images/brandon-griggs-wR11KBaB86U-unsplash.jpg",
       "price": 2350,
       "bed": 1,
-      "bath":1,
+      "bath": 1,
       "distance": 3,
-      "school":"University of California San Diego",
+      "school": "University of California San Diego",
       "friendly": "yes"
     },
     {
@@ -17,9 +17,9 @@
       "image": "images/chuttersnap-3_1f0ZGOjIY-unsplash (1).jpg",
       "price": 2350,
       "bed": 1,
-      "bath":1,
+      "bath": 1,
       "distance": 3,
-      "school":"University of California San Diego",
+      "school": "University of California San Diego",
       "friendly": "yes"
     },
     {
@@ -28,9 +28,9 @@
       "image": "images/grant-lemons-jTCLppdwSEc-unsplash.jpg",
       "price": 2350,
       "bed": 1,
-      "bath":1,
+      "bath": 1,
       "distance": 3,
-      "school":"University of California San Diego",
+      "school": "University of California San Diego",
       "friendly": "yes"
     },
     {
@@ -39,9 +39,9 @@
       "image": "images/hebert-marchesi-kKh9J8-UND4-unsplash.jpg",
       "price": 2350,
       "bed": 1,
-      "bath":1,
+      "bath": 1,
       "distance": 3,
-      "school":"San Diego State University",
+      "school": "San Diego State University",
       "friendly": "yes"
     },
     {
@@ -50,9 +50,9 @@
       "image": "images/kelvin-zyteng-LMq-rTluKfQ-unsplash.jpg",
       "price": 2350,
       "bed": 1,
-      "bath":1,
+      "bath": 1,
       "distance": 3,
-      "school":"San Diego State University",
+      "school": "San Diego State University",
       "friendly": "yes"
     },
     {
@@ -61,9 +61,9 @@
       "image": "images/malcolm-shadrach-_r80LCluvVM-unsplash.jpg",
       "price": 2350,
       "bed": 1,
-      "bath":1,
+      "bath": 1,
       "distance": 3,
-      "school":"San Diego State University",
+      "school": "San Diego State University",
       "friendly": "yes"
     },
     {
@@ -72,9 +72,9 @@
       "image": "images/marla-prusik-5q1KnUjtjaM-unsplash.jpg",
       "price": 2350,
       "bed": 1,
-      "bath":1,
+      "bath": 1,
       "distance": 3,
-      "school":"University of San Diego",
+      "school": "University of San Diego",
       "friendly": "yes"
     },
     {
@@ -83,9 +83,9 @@
       "image": "images/seyi-ariyo-XCCAVA3BjhM-unsplash.jpg",
       "price": 2350,
       "bed": 1,
-      "bath":1,
+      "bath": 1,
       "distance": 3,
-      "school":"University of San Diego",
+      "school": "University of San Diego",
       "friendly": "yes"
     },
     {
@@ -94,10 +94,32 @@
       "image": "images/sigmund-CwTfKH5edSk-unsplash.jpg",
       "price": 2350,
       "bed": 1,
-      "bath":1,
+      "bath": 1,
       "distance": 3,
-      "school":"University of San Diego",
+      "school": "University of San Diego",
       "friendly": "yes"
+    },
+    {
+      "name": "Test",
+      "image": "Test",
+      "price": "Test",
+      "bed": "Test",
+      "bath": "Test",
+      "distance": "Test",
+      "school": "University of California San Diego",
+      "friendly": "yes",
+      "id": 10
+    },
+    {
+      "name": "Test",
+      "image": "data:image/jpeg;base64,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",
+      "price": "Test",
+      "bed": "Test",
+      "bath": "Test",
+      "distance": "Test",
+      "school": "University of San Diego",
+      "friendly": "no",
+      "id": 11
     }
   ]
 }

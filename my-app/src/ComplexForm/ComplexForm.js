@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import "./ComplexForm.css"
 
-function ComplexForm(){
+function ComplexForm({newComplex}){
   const [isName, setIsName] = useState("")
+  const [isImage, setIsImage] = useState("")
   const [isPrice, setIsPrice] = useState("")
   const [isBed, setIsBed] = useState("")
   const [isBath, setIsBath] = useState("")
@@ -12,6 +13,10 @@ function ComplexForm(){
 
   function handleName(e){
     setIsName(e.target.value)
+  }
+
+  function handleImage(e){
+    setIsImage(e.target.value)
   }
 
   function handlePrice(e){
@@ -39,13 +44,47 @@ function ComplexForm(){
     setPetFriendly(e.target.value)
   }
 
+  function handleOnSubmit(e){
+    e.preventDefault();
+    const formData = {
+      name: isName,
+      image:isImage ,
+      price: isPrice,
+      bed: isBed,
+      bath:isBath,
+      distance: isDistance,
+      school:isSchool,
+      friendly: isPetFriendly
+    };
+
+    fetch(" http://localhost:3000/Complex",{
+      method:"POST",
+      headers:{
+        "Content-Type": "application/json",
+      },
+      body:JSON.stringify(formData)
+    })
+    
+    newComplex(formData)
+    setIsName("");
+    setIsImage("")
+    setIsPrice("");
+    setIsBed("");
+    setIsBath("");
+    setIsSchool("");
+    setIsDistance("");
+    setPetFriendly("yes")
+
+  }
+
   return(
-    <form>
+    <form onSubmit={handleOnSubmit}>
       <div class ="formdiv">
       <h2> Add Your Complex</h2>
       <div class = "container">
         <div class = "container-child1">
           <p class = "form-question"> Complex Name </p>
+          <p class = "form-question"> Picture of Complex </p>
           <p class = "form-question"> Bed </p>
           <p class = "form-question"> Bath </p>
           <p class = "form-question"> Price </p>
@@ -55,6 +94,7 @@ function ComplexForm(){
         </div>
         <div class = "container-child2">
           <input onChange={handleName} class = "formbox "type="text" placeholder=" Enter Name " value = {isName}/>
+          <input onChange={handleImage} class = "formbox "type="text" placeholder=" Enter Url " value = {isImage}/>
           <input onChange={handlebed} class = "formbox "type="text" placeholder=" Enter Bed " value = {isBed}/>
           <input onChange={handleBath} class = "formbox "type="text" placeholder=" Enter Bath " value = {isBath}/>
           <input onChange={handlePrice} class = "formbox "type="text" placeholder="Enter Price" value = {isPrice}/>

@@ -10,6 +10,8 @@ import './App.css';
 function App() {
   const [listArr, setListArr] = useState([])
   const [isLoaded, setIsLoaded] = useState(false);
+  const [active, setIsActive] = useState(false)
+
   useEffect(() => {
     fetch("http://localhost:3000/Complex")
     .then((res) => res.json())
@@ -22,21 +24,26 @@ function App() {
 
   if (!isLoaded) return <h3>Loading...</h3>;
 
+  function newComplex(complex) {
+    setListArr([...listArr, complex ])
+  }
+
+
   return (
     <div className="App">
       <Header/>
       <CurtainMenu/>
       <Switch>
         <Route path= "/Complexlist">
-          <ComplexList
-          listArrary = {listArr}
+          <ComplexList listArrary = {listArr}
           />
         </Route>
         <Route path= "/Complexform">
-          <ComplexForm/>
+          <ComplexForm newComplex = {newComplex}/>
         </Route>
         <Route path = "/">
           <MainComponent/>
+          <ComplexList listArrary = {listArr}/>
         </Route>
       </Switch>
     </div>
