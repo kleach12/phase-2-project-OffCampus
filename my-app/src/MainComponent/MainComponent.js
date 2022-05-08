@@ -1,16 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 import "./MainComponent.css"
 
-function MainComponent(){
+function MainComponent({activateList, setIsActive}){
+  
+  const [isSchool, setIsSchool] = useState("")
+
+  function handleSchool(e) {
+    const selectedSchool = e.target.value
+    setIsSchool(selectedSchool)
+    setIsActive((activateList) => !activateList)
+  }
 
   return(
     <div class = "maincomponent">
       <h2>Search by School</h2>
-      <select class = "school" name="Schools" id="Schools" placeholder="Choose School">
+      <select value = {isSchool} onChange = {handleSchool} class = "school" name="Schools" id="Schools" placeholder="Choose School">
         <option value="">Please Choose...</option>
-        <option value="UCSD">University of California San Diego</option>
-        <option value="SDSU"> San Diego State University</option>
-        <option value="USD">University of San Diego</option>
+        <option value="University of California San Diego">University of California San Diego</option>
+        <option value="San Diego State University"> San Diego State University</option>
+        <option value="University of San Diego">University of San Diego</option>
       </select>
     </div>
   )

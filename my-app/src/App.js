@@ -10,7 +10,9 @@ import './App.css';
 function App() {
   const [listArr, setListArr] = useState([])
   const [isLoaded, setIsLoaded] = useState(false);
-  const [active, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false)
+
+  console.log(isActive)
 
   useEffect(() => {
     fetch("http://localhost:3000/Complex")
@@ -28,6 +30,7 @@ function App() {
     setListArr([...listArr, complex ])
   }
 
+  const showList = isActive ? <ComplexList listArrary = {listArr}/> : null;
 
   return (
     <div className="App">
@@ -42,8 +45,8 @@ function App() {
           <ComplexForm newComplex = {newComplex}/>
         </Route>
         <Route path = "/">
-          <MainComponent/>
-          <ComplexList listArrary = {listArr}/>
+          <MainComponent activateList = {isActive} setIsActive= {setIsActive}/>
+          {showList}
         </Route>
       </Switch>
     </div>
