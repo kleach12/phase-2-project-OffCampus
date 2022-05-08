@@ -9,33 +9,34 @@ function ComplexForm(){
   const [isSchool, setIsSchool] = useState("")
   const [isDistance, setIsDistance] = useState("")
   const [isPetFriendly, setPetFriendly] = useState("yes")
-  const [isSelected, setIsSelectesd]
-
-  console.log(school)
 
   function handleName(e){
-    setName(e.target.value)
+    setIsName(e.target.value)
   }
 
   function handlePrice(e){
-    setPrice(e.target.value)
+    setIsPrice(e.target.value)
   }
 
   function handlebed(e){
-    setBed(e.target.value)
+    setIsBed(e.target.value)
   }
 
   function handleBath(e){
-    setBath(e.target.value)
+    setIsBath(e.target.value)
   }
 
   function handleSchool(e) {
     const selectedSchool = e.target.value
-    setSchool(selectedSchool)
+    setIsSchool(selectedSchool)
   }
 
   function handleDistance(e){
-    setDistance(e.target.value)
+    setIsDistance(e.target.value)
+  }
+
+  function handlePets(e){
+    setPetFriendly(e.target.value)
   }
 
   return(
@@ -65,9 +66,9 @@ function ComplexForm(){
           </select>
           <input  onChange = {handleDistance} class = "formbox "type="text" placeholder="Enter Distance" value = {isDistance}/>
           <div class="radiobox">
-            <input  class = "formradio" name = "pets" type="radio" value = "yes"/>
+            <input  onChange = {handlePets} checked ={isPetFriendly === "yes"} class = "formradio" name = "pets" type="radio" value = "yes"/>
               <label> Yes </label>
-            <input  class = "formradio" name = "pets"type="radio" value = "no"/>
+            <input  onChange = {handlePets} checked ={isPetFriendly === "no"} class = "formradio" name = "pets"type="radio" value = "no"/>
               <label> No </label>
           </div>
         </div>
