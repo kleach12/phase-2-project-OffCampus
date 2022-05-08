@@ -5,7 +5,7 @@ function MainComponent(){
 
   return(
     <div class = "maincomponent">
-      <h2>Find Your School...</h2>
+      <h2>Search by School</h2>
       <select class = "school" name="Schools" id="Schools" placeholder="Choose School">
         <option value="">Please Choose...</option>
         <option value="UCSD">University of California San Diego</option>

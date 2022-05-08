@@ -2,6 +2,41 @@ import React, {useState} from "react";
 import "./ComplexForm.css"
 
 function ComplexForm(){
+  const [isName, setIsName] = useState("")
+  const [isPrice, setIsPrice] = useState("")
+  const [isBed, setIsBed] = useState("")
+  const [isBath, setIsBath] = useState("")
+  const [isSchool, setIsSchool] = useState("")
+  const [isDistance, setIsDistance] = useState("")
+  const [isPetFriendly, setPetFriendly] = useState("yes")
+  const [isSelected, setIsSelectesd]
+
+  console.log(school)
+
+  function handleName(e){
+    setName(e.target.value)
+  }
+
+  function handlePrice(e){
+    setPrice(e.target.value)
+  }
+
+  function handlebed(e){
+    setBed(e.target.value)
+  }
+
+  function handleBath(e){
+    setBath(e.target.value)
+  }
+
+  function handleSchool(e) {
+    const selectedSchool = e.target.value
+    setSchool(selectedSchool)
+  }
+
+  function handleDistance(e){
+    setDistance(e.target.value)
+  }
 
   return(
     <form>
@@ -18,21 +53,21 @@ function ComplexForm(){
           <p class = "form-question"> Pet Friendly </p>
         </div>
         <div class = "container-child2">
-          <input  class = "formbox "type="text" placeholder=" Enter Name "/>
-          <input  class = "formbox "type="text" placeholder=" Enter Bed "/>
-          <input  class = "formbox "type="text" placeholder=" Enter Bath "/>
-          <input  class = "formbox "type="text" placeholder="Enter Price"/>
-          <select id = "optionform" class = "formbox "type="select" placeholder="Name">
-            <option value="">Choose a School</option>
-            <option class = "option" value="UCSD">University of California San Diego</option>
-            <option value="SDSU"> San Diego State University</option>
-            <option value="USD">University of San Diego</option>
+          <input onChange={handleName} class = "formbox "type="text" placeholder=" Enter Name " value = {isName}/>
+          <input onChange={handlebed} class = "formbox "type="text" placeholder=" Enter Bed " value = {isBed}/>
+          <input onChange={handleBath} class = "formbox "type="text" placeholder=" Enter Bath " value = {isBath}/>
+          <input onChange={handlePrice} class = "formbox "type="text" placeholder="Enter Price" value = {isPrice}/>
+          <select value = {isSchool} onChange = {handleSchool}  class = "formbox" type="select">
+            <option value = "" >Choose School</option>
+            <option value = "University of California San Diego" >University of California San Diego</option>
+            <option value = "San Diego State University"> San Diego State University</option>
+            <option value = "University of San Diego">University of San Diego</option>
           </select>
-          <input  class = "formbox "type="text" placeholder="Enter Price"/>
+          <input  onChange = {handleDistance} class = "formbox "type="text" placeholder="Enter Distance" value = {isDistance}/>
           <div class="radiobox">
-            <input  class = "formradio" type="radio" />
+            <input  class = "formradio" name = "pets" type="radio" value = "yes"/>
               <label> Yes </label>
-            <input  class = "formradio" type="radio"/>
+            <input  class = "formradio" name = "pets"type="radio" value = "no"/>
               <label> No </label>
           </div>
         </div>

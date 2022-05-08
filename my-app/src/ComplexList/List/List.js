@@ -1,7 +1,16 @@
 import React from "react";
 import "./List.css"
 
-function List ({name,price,image, school}){
+function List ({
+  name,
+  price,
+  image,
+  school,
+  bed,
+  bath,
+  distance,
+  friendly
+}){
   console.log(school)
   return(
     <div class = "card">
@@ -13,20 +22,20 @@ function List ({name,price,image, school}){
           <div id= "text">
             <table>
               <tr>
-                <th>School:<span> {school}</span> </th>
+                <th>School:<span> {school}</span></th>
               </tr>
               <tr>
-                <th>Price: <span> ${price}</span> </th>
+                <th>Price: <span> ${price}</span></th>
               </tr>
               <tr>
-                <th> Bed: <span> </span>  </th>
-                <th> Bath: <span> </span>  </th>
+                <th> # of Bed: <span> {bed}</span></th>
+                <th> # of Bath: <span>  {bath}</span></th>
               </tr>
               <tr>
-                <th> Distance: <span> </span> </th>
+                <th> Distance: <span> {distance} mi</span></th>
               </tr>
               <tr>
-                <th>Pet Friendly: <span> </span>  </th>
+                <th>Pet Friendly: <span> {friendly} </span></th>
               </tr>
             </table>
           </div>

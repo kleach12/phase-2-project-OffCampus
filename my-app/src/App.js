@@ -9,15 +9,18 @@ import './App.css';
 
 function App() {
   const [listArr, setListArr] = useState([])
-
+  const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
     fetch("http://localhost:3000/Complex")
     .then((res) => res.json())
     .then((data) =>{ 
       // console.log(data)
       setListArr(data)
+      setIsLoaded(true)
     })
   },[])
+
+  if (!isLoaded) return <h3>Loading...</h3>;
 
   return (
     <div className="App">
