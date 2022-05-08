@@ -1,13 +1,14 @@
 import React, {useState} from "react";
 import "./MainComponent.css"
 
-function MainComponent({activateList, setIsActive}){
+function MainComponent({activateList, setIsActive, searched}){
   
   const [isSchool, setIsSchool] = useState("")
 
   function handleSchool(e) {
     const selectedSchool = e.target.value
     setIsSchool(selectedSchool)
+    searched(selectedSchool)
   }
 
   if (isSchool === "University of California San Diego"){
