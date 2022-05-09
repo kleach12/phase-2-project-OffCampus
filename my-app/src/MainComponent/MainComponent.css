@@ -48,3 +48,9 @@ select.option{
   cursor: pointer;
 
 }
+
+@media only screen and (max-width: 1395px){
+  select#Schools{
+    font-size: 20px;
+  }
+}
