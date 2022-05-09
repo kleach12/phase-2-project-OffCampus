@@ -13,13 +13,10 @@ function App() {
   const [isActive, setIsActive] = useState(false);
   const [isSearched, setIsSeached] = useState("")
 
-  console.log(isSearched)
-
   useEffect(() => {
     fetch("http://localhost:3000/Complex")
     .then((res) => res.json())
     .then((data) =>{ 
-      // console.log(data)
       setListArr(data)
       setIsLoaded(true)
     })
@@ -33,11 +30,9 @@ function App() {
 
   const searchedArr = listArr.filter((complex) => {
     if(complex.school === isSearched){
-    return complex
-    }
+    return complex}
   })
 
-  console.log(searchedArr)
 
   const showList = isActive ? <ComplexList listArrary = {searchedArr}/> : null;
 

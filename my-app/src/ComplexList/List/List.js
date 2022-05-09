@@ -17,9 +17,11 @@ function List ({
       <img src={image} alt = {name} />
       <div class = "data">
         <div class = "content">
-          <h3> {name} </h3>
           <div id= "text">
             <table>
+              <tr>
+              <th> <h3>{name} </h3></th>
+              </tr>
               <tr>
                 <th>School:<span> {school}</span></th>
               </tr>

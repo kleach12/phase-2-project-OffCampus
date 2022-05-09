@@ -23,7 +23,8 @@ function MainComponent({activateList, setIsActive, searched}){
 
   return(
     <div class = "maincomponent">
-      <h2>Search by School</h2>
+      <h2> Find Your Housing</h2>
+      <h4>Search by School</h4>
       <select value = {isSchool} onChange = {handleSchool} class = "school" name="Schools" id="Schools" placeholder="Choose School">
         <option value="">Please Choose...</option>
         <option value="University of California San Diego">University of California San Diego</option>

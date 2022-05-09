@@ -56,3 +56,14 @@ span {
   padding: 5px 5px 5px 5px;
   border-radius: 4px;
 }
+
+@media only screen and (max-width: 1410px){
+  .card h3{
+    font-size: 25px;
+    padding-top: 20px;
+  }
+  #text {
+    font-size: 18px;
+    padding: 0px 25px 0px 0px;
+  }
+}

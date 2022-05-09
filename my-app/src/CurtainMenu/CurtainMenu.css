@@ -49,6 +49,7 @@ nav a :first-of-type{
   color: #3c6e71;
   background: #d9d9d9;
   border-radius: 50%;
+  border-color: #fff;
 }
 
 @media screen and (max-width: 2500px){
