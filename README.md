@@ -5,7 +5,7 @@ OffCampus is a single page web application that allows for students to find off-
 
 
 <h2>Visuals</h2>
-<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/6yC18lqyxtymp4HMwT" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/6yC18lqyxtymp4HMwT">via GIPHY</a></p>
+![mainComp](https://user-images.githubusercontent.com/95396231/167528031-3be47724-310f-4b61-91f1-5f47bb0e8bb2.gif)
 
 
 <h2>Roadmap</h2>
