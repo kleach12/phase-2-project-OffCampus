@@ -19,10 +19,10 @@ function ComplexList({listArrary}){
     friendly = {complex.friendly}
     />
   ))
-  console.log(singleComplex)
+  // console.log(singleComplex)
   
   return(
-    <div class = "list">
+    <div className = "list">
       {singleComplex}
     </div>
   )
