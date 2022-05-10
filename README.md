@@ -1,7 +1,7 @@
 <h1>OffCampus<h1>
 
 <h2>Description</h2>
-OffCampus is a single page web application that allows for students to find off-campus housing within a close distance of their school. This app will also give a list of information about housing including amenities, pricing, and more. This web application is not only for students but also for individuals who wanto to display their complexes. Included in the application is a complex form that allows these individuals to upload their complex and its corresponding information. 
+OffCampus is a single page web application that allows for students to find off-campus housing within a close distance of their school. This app will also give a list of information about housing including amenities, pricing, and more. This web application is not only for students but also for individuals who want to display their complexes. Included in the application is a complex form that allows these individuals to upload their complex and its corresponding information. 
 
 
 <h2>Visuals</h2>
