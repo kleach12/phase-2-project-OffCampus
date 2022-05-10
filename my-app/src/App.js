@@ -12,6 +12,8 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [isSearched, setIsSeached] = useState("")
+  const [isSchool, setIsSchool] = useState("")
+  console.log(isSchool)
 
   useEffect(() => {
     fetch("http://localhost:3000/Complex")
@@ -30,7 +32,7 @@ function App() {
 
   const searchedArr = listArr.filter((complex) => {
     if(complex.school === isSearched){
-    return complex}
+      return complex}
   })
 
 
@@ -49,8 +51,8 @@ function App() {
           <ComplexForm newComplex = {newComplex}/>
         </Route>
         <Route path = "/">
-          <MainComponent activateList = {isActive} setIsActive= {setIsActive} searched = {setIsSeached}/>
-          {showList}
+          <MainComponent isSchool ={isSchool} setIsSchool = {setIsSchool} searched = {setIsSeached}/>
+          <ComplexList listArrary = {searchedArr}/>
         </Route>
       </Switch>
     </div>

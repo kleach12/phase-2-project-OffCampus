@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import "./MainComponent.css"
 
-function MainComponent({setIsActive, searched}){
+function MainComponent({ searched, isSchool, setIsSchool}){
   
-  const [isSchool, setIsSchool] = useState("")
+// const [isSchool, setIsSchool] = useState("")
 
   function handleSchool(e) {
     const selectedSchool = e.target.value
@@ -11,15 +11,16 @@ function MainComponent({setIsActive, searched}){
     searched(selectedSchool)
   }
 
-  if (isSchool === "University of California San Diego"){
-    setIsActive(true)
-  } else if (isSchool === "San Diego State University"){
-    setIsActive(true)
-  } else if (isSchool === "University of San Diego"){
-    setIsActive(true)
-  } else {
-    setIsActive(false)
-  }
+// Old code that was creating a rendering bug
+  // if (isSchool === "University of California San Diego"){
+  //   setIsActive(true)
+  // } else if (isSchool === "San Diego State University"){
+  //   setIsActive(true)
+  // } else if (isSchool === "University of San Diego"){
+  //   setIsActive(true)
+  // } else {
+  //   setIsActive(false)
+  // }
 
   return(
     <div className = "maincomponent">
