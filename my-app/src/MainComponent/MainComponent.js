@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "./MainComponent.css"
 
 function MainComponent({ searched, isSchool, setIsSchool}){

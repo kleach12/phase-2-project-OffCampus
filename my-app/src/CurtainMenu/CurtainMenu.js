@@ -8,7 +8,7 @@ function CurtainMenu(){
   const [checkWidth, setCheckWidth] = useState(window.innerWidth)
 
   const checkFunc = () => {
-    console.log(checkWidth)
+    // console.log(checkWidth)
     setCheckWidth(window.innerWidth)
   }
 
