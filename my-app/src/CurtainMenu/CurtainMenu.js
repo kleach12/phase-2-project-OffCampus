@@ -12,15 +12,13 @@ function CurtainMenu(){
     setCheckWidth(window.innerWidth)
   }
 
+  // this useEffect is used to check th width of the page and resize the curtain menu depending on the size.
   useEffect(() => {
     window.addEventListener('resize', checkFunc)
-
     return () => {window.removeEventListener('resize',checkFunc)}
-
-
   },[])
 
-
+// toggles the curtain menu to show and hide
   function handleToggleNav(){
     console.log(toggleNav)
     setToggleNav(!toggleNav)
@@ -33,19 +31,19 @@ function CurtainMenu(){
         <AiOutlineMenu style={{color: '#3c6e71'}}/>
       </button>
       )}
-
+{/* nav is toggled when the button above is clicked */}
       <nav className= {toggleNav ? "active" : ""}>
 
-      {checkWidth <2500 && (
+      {checkWidth < 2500 && (
         <button 
         onClick ={handleToggleNav} className="close-curtain">
           X
         </button>
       )}
-
-        <NavLink to="/" exact className="tags"> Home </NavLink>
-        <NavLink to="/Complexlist" exact className="tags"> Complexes</NavLink>
-        <NavLink to="/Complexform" exact className="tags"> New Complex</NavLink>
+{/* navlinks toggle open and closed when click so user does not hae tto do it manually*/}
+        <NavLink to="/" exact className="tags" onClick={handleToggleNav}> Home </NavLink>
+        <NavLink to="/Complexlist" exact className="tags" onClick={handleToggleNav}> Complexes</NavLink>
+        <NavLink to="/Complexform" exact className="tags" onClick={handleToggleNav}> New Complex</NavLink>
 
       </nav>
     </div>
